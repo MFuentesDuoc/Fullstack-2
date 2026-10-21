@@ -1,0 +1,70 @@
+.app-layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.app-layout > main {
+    flex: 1 0 auto;
+}
+
+.hero-inicio {
+    padding: 4rem 0;
+    border-bottom: 5px solid #f59e0b;
+    background: linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%);
+    color: #fff;
+}
+
+.hero-inicio .display-4 {
+    font-weight: 700;
+}
+
+.tarjeta-caracteristica {
+    padding: 1rem;
+    height: 100%;
+}
+
+.tarjeta-caracteristica .card-title {
+    color: #1d4ed8;
+    font-weight: 700;
+}
+
+.layout-auth {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #f1f5f9;
+}
+
+.auth-card {
+    border: none !important;
+}
+
+.contenido-panel {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.buscador-eventos {
+    max-width: 320px;
+}
+
+.tabla-acciones {
+    white-space: nowrap;
+}
+
+.footer-eventos {
+    background-color: #0f172a;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    border-top: 4px solid #f59e0b;
+}
+
+.tarjeta-proveedor {
+    height: 100%;
+}
+
+.estado-proveedor {
+    font-weight: 600;
+}
