@@ -5,13 +5,27 @@ import { useEventos } from "../context/EventosContext.jsx";
 
 const ENLACES_PUBLICOS = [
     { to: "/", label: "Inicio" },
-    { to: "/catalogo", label: "Catálogo" },
+    { to: "/home", label: "Tienda" },
+    { to: "/productos", label: "Productos" },
+    { to: "/categorias", label: "Categorías" },
+    { to: "/ofertas", label: "Ofertas" },
+    { to: "/blogs", label: "Blogs" },
+    { to: "/nosotros", label: "Nosotros" },
+    { to: "/contacto", label: "Contacto" },
+    { to: "/catalogo", label: "Catálogo Salones" },
     { to: "/reservar", label: "Reservar" }
 ];
 
 const ENLACES_ADMIN = [
-    { to: "/admin/gestion", label: "Gestión" },
-    { to: "/admin/reportes", label: "Reportes" },
+    { to: "/admin/dashboard", label: "Dashboard" },
+    { to: "/admin/ordenes", label: "Órdenes" },
+    { to: "/admin/productos", label: "Productos" },
+    { to: "/admin/categorias", label: "Categorías" },
+    { to: "/admin/usuarios", label: "Usuarios" },
+    { to: "/admin/reportes-tienda", label: "Reportes" },
+    { to: "/admin/perfil", label: "Perfil" },
+    { to: "/admin/gestion", label: "Gestión Eventos" },
+    { to: "/admin/reportes", label: "Reportes Eventos" },
     { to: "/proveedores", label: "Proveedores" }
 ];
 
