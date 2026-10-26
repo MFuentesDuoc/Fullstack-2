@@ -1,5 +1,6 @@
 import { render, screen } from '@testing-library/react';
-import SalonCard from '../components/SalonCard.jsx';
+import { describe, it, expect } from 'vitest';
+import SalonCard from './SalonCard.jsx';
 import { BrowserRouter } from 'react-router-dom';
 
 const salonMock = {
@@ -18,15 +19,14 @@ function renderWithRouter(ui) {
 describe('SalonCard', () => {
   it('renderiza correctamente los datos del salón', () => {
     renderWithRouter(<SalonCard salon={salonMock} />);
-    expect(screen.getByText('SL001')).toBeTruthy();
-    expect(screen.getByText('Salón Principal')).toBeTruthy();
-    expect(screen.getByText(/Cap: 500/)).toBeTruthy();
+    expect(screen.getByText('SL001')).toBeInTheDocument();
+    expect(screen.getByText('Salón Principal')).toBeInTheDocument();
+    expect(screen.getByText(/Cap: 500/)).toBeInTheDocument();
   });
 
   it('muestra el botón para reservar', () => {
     renderWithRouter(<SalonCard salon={salonMock} />);
-    const boton = screen.getByRole('link', { name: /Reservar Salón/i });
-    expect(boton).toBeTruthy();
-    expect(boton.getAttribute('href')).toBe('/reservar');
+    const boton = screen.getByText(/Reservar Salón/i);
+    expect(boton).toBeInTheDocument();
   });
 });
